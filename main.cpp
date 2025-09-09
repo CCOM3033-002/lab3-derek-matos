@@ -1,1 +1,57 @@
+/*Derek Matos 
+septiembre 9 de 2025
+Lab #3: Numeros ALeatorios*/
 
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+int main(){
+
+    //Se codifico el numero aleatorio generador con tres diferentes variables en int
+
+    srand(time(0));
+
+    int numA1 = rand() % (100 - 0 + 1) + 0;
+    int numA2 = rand() % (100 - 0 + 1) + 0;
+    int numA3 = rand() % (100 - 0 + 1) + 0;
+
+    // Se puso para poder ver los tres numeros aleatorios y se puso Orden descendiente para el proximo paso
+
+    cout << "Numero aeatorio generador:" << numA1 << " "<< numA2 << " "<< numA3 << endl;
+    cout << "Orden descendiente: ";
+
+    // Codigo que pone de modo descendiente a los tres numeros aleatorios que conseguimos en la primera parte.
+
+    if( numA1 >= numA2 && numA1 >= numA3){
+        if (numA2 >= numA3){
+            cout << numA1 << " >= " << numA2 << " >= " << numA3 << endl;
+        }
+        else {
+            cout << numA1 << " >= " << numA3 << " >= " << numA2 << endl;
+        }
+    }
+    else if (numA2 >= numA1 && numA2 >= numA3){
+        if (numA1 >= numA3){
+            cout << numA2 << " >= " << numA1 << " >= " << numA3 << endl;
+        }
+        else {
+            cout << numA2 << " >= " << numA3 << " >= " << numA1<< endl;
+        }
+    }
+    else if (numA3 >= numA1 && numA3 >= numA2){
+        if (numA1 >= numA2){
+            cout << numA3 << " >= " << numA1 << " >= " << numA2 << endl;
+        }
+        else {
+            cout << numA3 << " >= " << numA2 << " >= " << numA1 << endl;
+        }
+    }
+    else {
+        cout << "No es posible pornelo en forma descendiente." << endl;
+    }
+
+
+    return 0;
+
+}
