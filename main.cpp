@@ -8,14 +8,20 @@ using namespace std;
 
 int main(){
 
+    //Se codifico el numero aleatorio generador con tres diferentes variables en int
+
     srand(time(0));
 
     int numA1 = rand() % (100 - 0 + 1) + 0;
     int numA2 = rand() % (100 - 0 + 1) + 0;
     int numA3 = rand() % (100 - 0 + 1) + 0;
 
+    // Se puso para poder ver los tres numeros aleatorios y se puso Orden descendiente para el proximo paso
+
     cout << "Numero aeatorio generador:" << numA1 << " "<< numA2 << " "<< numA3 << endl;
     cout << "Orden descendiente: ";
+
+    // Codigo que pone de modo descendiente a los tres numeros aleatorios que conseguimos en la primera parte.
 
     if( numA1 >= numA2 && numA1 >= numA3){
         if (numA2 >= numA3){
@@ -44,6 +50,7 @@ int main(){
     else {
         cout << "No es posible pornelo en forma descendiente." << endl;
     }
+
 
     return 0;
 
