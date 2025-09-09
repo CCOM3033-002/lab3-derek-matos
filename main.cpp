@@ -4,7 +4,7 @@ Lab #3: Numeros ALeatorios*/
 
 #include<iostream>
 #include<cstdlib>
-Using namespace std;
+using namespace std;
 
 int main(){
 
