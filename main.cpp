@@ -37,7 +37,7 @@ int main(){
             cout << "orden desendiente:" << numA3 << " " << numA1 << " " << numA2 << endl;
         }
         else {
-            cout "orden desendiente:" << numA3 << " " << numA2 << " " << numA1 << endl;
+            cout << "orden desendiente:" << numA3 << " " << numA2 << " " << numA1 << endl;
         }
     }
     else {
