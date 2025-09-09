@@ -12,6 +12,8 @@ int main(){
 
     int numeroAleatorio = rand() % (100 - 0 + 1) + 0;
 
-    cout << numeroAleatorio << end;
+    cout << numeroAleatorio << endl;
+
+    return 0;
 
 }
