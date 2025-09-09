@@ -14,8 +14,8 @@ int main(){
     int numA2 = rand() % (100 - 0 + 1) + 0;
     int numA3 = rand() % (100 - 0 + 1) + 0;
 
-    cout << "numero aeatorio generador:" << numA1 << " "<< numA2 << " "<< numA3 << endl;
-    cout << "orden descendiente: ";
+    cout << "Numero aeatorio generador:" << numA1 << " "<< numA2 << " "<< numA3 << endl;
+    cout << "Orden descendiente: ";
 
     if( numA1 >= numA2 && numA1 >= numA3){
         if (numA2 >= numA3){
