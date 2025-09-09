@@ -41,7 +41,7 @@ int main(){
         }
     }
     else {
-        cout << "No es posible pornelo en forma desendiente."
+        cout << "No es posible pornelo en forma desendiente." << endl;
     }
 
     return 0;
